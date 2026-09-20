@@ -1,0 +1,10 @@
+[project]
+name = "freshvidcode"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv>=1.2.3",
+    "zai-sdk>=0.2.3",
+]
