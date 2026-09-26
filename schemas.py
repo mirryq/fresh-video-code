@@ -1,5 +1,6 @@
+from enum import Enum
+from typing import List
 from pydantic import BaseModel, HttpUrl
-from typing import List, Enum
 
 
 class SubtitleSegment(BaseModel):
