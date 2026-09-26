@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "FreshVidCode",
+  "version": "0.0.1",
+  "description": "Capture YouTube frame + subtitles and relay to local analyze service",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://youtube.com/*",
+        "*://m.youtube.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": ["http://127.0.0.1:8000/*", "http://localhost:8000/*"],
+  "permissions": []
+}
